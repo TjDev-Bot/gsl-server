@@ -1,0 +1,47 @@
+:root {
+    --logo-width: 80px;
+    --logo-width-md: 60px;
+    --icon-btn-bg-color: green;
+    --icon-btn-color: white;
+}
+.login-logo {
+    width: 80px;
+    height: auto;
+}
+.bg-img {
+    background-image: url("https://gsl.jastech.co/vendor/users/login/login-image.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
+}
+.icon-btn a  {
+  background-color: green;
+  border-radius: 5px;
+  text-decoration: none; 
+    color: white;
+    padding: 10px 20px;
+    column-gap: 5px;
+}
+
+.bi-microsoft {
+    align-content: center;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2em;
+  
+}
+  @media only screen and (max-width: 1024px) {
+      
+   .linear-gradient {
+    min-height: 50vh;
+    margin-top: -20vh;
+     
+ }
+ .login-logo {
+    width: 60px;
+    height: auto;
+}
+  }

@@ -1,0 +1,84 @@
+CRITICAL - 2024-11-12 14:02:53 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 14:03:48 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 14:06:53 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 15:34:29 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 16:30:16 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-12 18:43:22 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 19:00:51 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 19:02:30 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 22:37:11 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

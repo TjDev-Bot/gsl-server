@@ -1,0 +1,75 @@
+<script>
+document.getElementById('btn-generate-labels').addEventListener('click', function() {
+    var tableData = gatherTableData();
+    const { jsPDF } = window.jspdf;
+    var doc = new jsPDF({
+        orientation: 'portrait',
+        unit: 'in',
+        format: [8.5, 11] // Letter size paper to fit two 4" x 6" labels
+    });
+
+    // Define styles
+    var labelWidth = 6;
+    var labelHeight = 4;
+    var margin = 0.5;
+    var lineHeight = 0.4;
+    var barcodeHeight = 1;
+    var barcodeWidth = 2;
+    var fontSize = 16;
+    var skuFontSize = fontSize * 1.5;
+
+
+     tableData.forEach(function(data, index) {
+        var x = (8.5 - labelWidth) / 2; // Center the label horizontally
+        var y = margin + (index % 2) * (labelHeight + margin);
+
+        // Check if we need to add a new page
+        if (index > 0 && index % 2 === 0) {
+            doc.addPage();
+            y = margin;
+        }
+     
+       // Add SKU text
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(skuFontSize);
+        doc.text(`${data.sku}`, x + 0.2, y + lineHeight);
+
+
+         // Add Quantity and other text
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(fontSize);
+        doc.text(`Quantity: ${data.qtyPerUnit} ${data.unitUom} (${data.totalQty} ${data.totalUom})`, x + 0.2, y + 2 * lineHeight);
+        
+        doc.setFont('helvetica', 'bold');
+        doc.text(`Unit #: ${data.unitId}    Supplier: ${data.supplier}`, x + 0.2, y + 3 * lineHeight);
+
+      // Generate barcode
+        var canvas = document.createElement('canvas');
+        JsBarcode(canvas, data.unitId, { format: 'CODE128' });
+        var imgData = canvas.toDataURL('image/png');
+        doc.addImage(imgData, 'PNG', x + 0.2, y + 4 * lineHeight, barcodeWidth, barcodeHeight);
+    });
+
+    doc.save('labels.pdf');
+});
+
+function gatherTableData() {
+    var tableData = [];
+    $('#table-process-units tbody tr').each(function() {
+        var row = $(this);
+        var unitData = {
+                    unitId: row.find('span#unit_no').text(),
+                    sku: sku = row.find('input[name="sku"]').val(),
+                    qtyPerUnit: row.find('input[name="unit_qty"]').val(),
+                    unitUom: row.find('input[name="unit_qty"]').data('unit_uom'),
+                    length: row.find('td:eq(4)').text(),
+                    totalQty: row.find('input[name="order_qty"]').val(),
+                    totalUom:row.find('input[name="order_qty"]').data('order_uom'),
+                    supplier: $('#processUnitsModalLabel').data('supplier'),
+                    po: $('#processUnitsModalLabel').data('po')
+        };
+        tableData.push(unitData);
+    });
+    return tableData;
+}
+</script>

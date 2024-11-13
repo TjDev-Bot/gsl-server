@@ -1,0 +1,517 @@
+CRITICAL - 2024-10-24 09:13:50 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 09:39:30 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 10:16:49 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 10:33:12 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 10:38:01 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 10:39:03 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 10:53:13 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 10:53:39 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:11:30 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:12:11 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:12:44 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:16:46 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:16:49 --> ErrorException: Undefined array key "supplier_code"
+[Method: POST, Route: wms/nj/pre-receiving]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 22.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "supplier_code"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:19:00 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:40:03 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:40:39 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 11:43:45 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-24 12:02:28 --> mysqli_sql_exception: Unknown column 'location' in 'where clause' in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Thornton/PreReceiving.php(21): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\PreReceiving->read()
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\PreReceiving))
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-10-24 12:02:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'location' in 'where clause'
+[Method: GET, Route: wms/nj/thornton/pre-receiving/read]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = :location:', [...], false)
+ 2 APPPATH/Controllers/WMS/NJ/Thornton/PreReceiving.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\PreReceiving->read()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\PreReceiving))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:02:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'location' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = \'5 Thornton\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = \'5 Thornton\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = :location:', [...], false)
+ 4 APPPATH/Controllers/WMS/NJ/Thornton/PreReceiving.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\PreReceiving->read()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\PreReceiving))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:02:28 --> [Caused by] mysqli_sql_exception: Unknown column 'location' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = \'5 Thornton\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = \'5 Thornton\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = \'5 Thornton\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `receiving_items_nj`
+WHERE `location` = :location:', [...], false)
+ 5 APPPATH/Controllers/WMS/NJ/Thornton/PreReceiving.php(21): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\PreReceiving->read()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\PreReceiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:03:21 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/pre-receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/PreReceiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\PreReceiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\PreReceiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:11:25 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/PreReceiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\PreReceiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\PreReceiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:20:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:20:43 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:22:32 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:24:25 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:24:38 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:25:15 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+[Method: GET, Route: wms/nj/thornton/receiving/read]
+in APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->read()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:36:12 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:36:20 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:39:09 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:39:50 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:40:18 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:41:38 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:55:50 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 12:56:10 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:02:46 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:03:01 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:07:28 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:07:36 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:09:15 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:12:48 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:15:07 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:15:56 --> Error: Call to a member function select() on null
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/NJ/Delivery.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->deliveryDates()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:28:33 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:30:21 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:30:42 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:34:29 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 13:34:40 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 15:39:19 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 15:39:24 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-24 15:39:30 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

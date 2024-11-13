@@ -1,0 +1,250 @@
+CRITICAL - 2024-11-10 02:15:06 --> ParseError: syntax error, unexpected variable "$routes", expecting ")"
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Config/Routes.php on line 22.
+ 1 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:15:07 --> ParseError: syntax error, unexpected variable "$routes", expecting ")"
+[Method: GET, Route: login]
+in APPPATH/Config/Routes.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:16:00 --> ParseError: syntax error, unexpected variable "$routes", expecting ")"
+[Method: GET, Route: login]
+in APPPATH/Config/Routes.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:23:12 --> ArgumentCountError: Too few arguments to function App\Controllers\WMS\Delivery::__construct(), 0 passed in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php on line 903 and exactly 2 expected
+[Method: GET, Route: wms/nj/delivery]
+in APPPATH/Controllers/WMS/Delivery.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\WMS\Delivery->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-10 02:52:07 --> mysqli_sql_exception: Table 'gslcrud-d846.delivery_units_thornton' doesn't exist in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `po_no`,...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`,...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`,...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`,...', Array, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-11-10 02:52:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gslcrud-d846.delivery_units_thornton' doesn't exist
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`', [], false)
+ 2 APPPATH/Controllers/WMS/Delivery.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:52:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gslcrud-d846.delivery_units_thornton' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`', [], false)
+ 4 APPPATH/Controllers/WMS/Delivery.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:52:07 --> [Caused by] mysqli_sql_exception: Table 'gslcrud-d846.delivery_units_thornton' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `delivery_date`, `status`, `color`, `text_color`
+FROM `delivery_units_thornton`', [], false)
+ 5 APPPATH/Controllers/WMS/Delivery.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-10 02:52:38 --> mysqli_sql_exception: Table 'gslcrud-d846.po_stock_nj' doesn't exist in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php(80): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\Delivery->getPo('nj')
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-11-10 02:52:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gslcrud-d846.po_stock_nj' doesn't exist
+[Method: POST, Route: wms/nj/delivery/get-po]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = :po_no:', [...], false)
+ 2 APPPATH/Controllers/WMS/Delivery.php(80): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->getPo('nj')
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:52:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gslcrud-d846.po_stock_nj' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = \'7531\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = \'7531\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = :po_no:', [...], false)
+ 4 APPPATH/Controllers/WMS/Delivery.php(80): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->getPo('nj')
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 02:52:38 --> [Caused by] mysqli_sql_exception: Table 'gslcrud-d846.po_stock_nj' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = \'7531\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = \'7531\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = \'7531\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1782): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `po_stock_nj`
+WHERE `po_no` = :po_no:', [...], false)
+ 5 APPPATH/Controllers/WMS/Delivery.php(80): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->getPo('nj')
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 03:00:20 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 03:00:52 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 03:12:17 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 03:21:38 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 03:21:45 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-10 03:28:11 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-10 06:10:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 06:10:32 --> 220 LO4P123CA0191.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sun, 10 Nov 2024 11:10:27 +0000 [08DD00CDB5B8A0DC]
+
+hello: 250-LO4P123CA0191.outlook.office365.com Hello [45.8.227.175]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-LO4P123CA0191.outlook.office365.com Hello [45.8.227.175]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-11-10 16:30:15 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

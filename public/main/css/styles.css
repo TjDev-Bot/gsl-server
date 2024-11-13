@@ -1,0 +1,56 @@
+/*
+@import "tailwindcss/base";
+//@import "tailwindcss/components";
+//@import "tailwindcss/utilities";
+*/
+bodybak {
+  background-image: url("../../images/wood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 100vh; }
+
+
+.active {
+  display: block; }
+
+#mobile-menu {
+  display: hidden; }
+
+#quote-area {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.9); }
+
+.uk-logo {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+table.table-sm, .form-control, td button.btn {
+  font-size: 1em; }
+
+.container {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.form-control::placeholder,
+.form-control::-webkit-input-placeholder {
+  color: #aaa; }
+
+  .form-label {
+    margin-bottom: 4px;
+  }
+
+.notes {
+  font-weight: 700;
+  font-style: italic; }
+
+.delete-item a {
+  display: block;
+  margin-top: 5px; }
+
+td.action-col,
+th.action-col {
+  width: 20px; }
+  
+
+/*# sourceMappingURL=styles.css.map */

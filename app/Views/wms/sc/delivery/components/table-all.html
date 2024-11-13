@@ -1,0 +1,81 @@
+<table id="table-data" class="table table-dark table-sm table-bordered table-striped table-hover" width="100%">
+        <thead>
+            <tr>
+               <th></th>
+              <th class="date">Delivery Date</th>
+                <th class="varchar">PO#</th>
+                <th class="mediumtext">Status</th>
+                <th class="mediumtext">Location</th>
+                <th class="mediumtext">Supplier</th>
+                <th class="longtext">Items/SKUs</th>
+                <th class="text">Booked By</th>
+            </tr>
+        </thead>
+    </table>
+
+<script>
+$(document).ready(function() {
+    var table = new DataTable('#table-data', {
+        ajax: {
+        url: '/wms/sc/delivery/read',
+        dataSrc: ''
+    },
+    
+    columns: [
+        {data: null, render: function(data, type, row) {
+            return '<div class="dropdown">' +
+                '<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
+                '</a>' +
+                '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">' +
+                '<a class="dropdown-item btn-edit" href="#" data-id="' + row.po_no + '">Update PO/Delivery</a>' +
+                '<a class="dropdown-item btn-detail" href="#" data-status="' + row.status + '"data-id="' + row.po_no + '">View Items</a>' +
+                '</div>' +
+                '</div>';
+        }},
+            {data: 'delivery_date', render: function(data, type, row) {
+                // Manually parse the date string
+                var dateParts = row.delivery_date.split('-');
+                var year = parseInt(dateParts[0], 10);
+                var month = parseInt(dateParts[1], 10) - 1; // Months are zero-based in JavaScript
+                var day = parseInt(dateParts[2], 10);
+
+                // Create a new Date object using the parsed components
+                var date = new Date(year, month, day);
+
+                // Get today's date
+                var today = new Date();
+                today.setHours(0, 0, 0, 0); // Set to midnight to compare only the date part
+
+                // Format the date as MM/DD/YYYY
+                var formattedDate = (date.getMonth() + 1).toString().padStart(2, '0') + '/' +
+                                    date.getDate().toString().padStart(2, '0') + '/' +
+                                    date.getFullYear();
+
+                // Check if the delivery date is in the past
+                if (date < today) {
+                    return '<span style="color: red;">' + formattedDate + '</span>';
+                } else {
+                    return formattedDate;
+                }
+            }},
+        {data: 'po_no'},
+        {data: 'status', render: function(data, type, row) {
+            return '<span class="' + data.toLowerCase() + '">' + data + '</span>';
+        }},
+        {data: 'location', render:function(data, type, row) {
+             return data.toUpperCase();
+        }},
+        {data: 'supplier_code'},
+        {data: 'po_items'},
+        {data: 'booked_by'},
+    ],
+    order: [[6, 'asc']],
+    paging: true,
+    searching: true,
+    ordering: true,
+    responsive: true
+});
+
+
+});
+</script>

@@ -1,0 +1,163 @@
+<div class="modal fade" id="modal-create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="createModalLabel">Schedule New Delivery</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-create" method="post" autocomplete="off">
+                     <input type="hidden" class="form-control" id="supplier_id" name="supplier_id">  
+                <div class="row mb-2">
+                    <div class="col-12 col-md-6 col-lg-3 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="po_no" name="po_no" placeholder="PO #">
+                            <label for="po_no">PO #</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="verbal_po" name="verbal_po" placeholder="Verbal PO">
+                            <label for="verbal_po">Verbal PO</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-2">
+                    <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="supplier_code" name="supplier_code" placeholder="Supplier">
+                            <label for="supplier_code">Supplier</label>
+                        </div> 
+                        
+                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-2">
+                <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="branch_code" name="branch_code" placeholder="Branch">
+                            <label for="branch_code">Branch</label>
+                        </div>
+                    </div>
+                </div>
+                     <div class="row mb-2">
+                         <div class="col-12 col-md-6 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="date" class="form-control" id="delivery_date" name="delivery_date" placeholder="Delivery Date" required>
+                            <label for="delivery_date">Delivery Date</label>
+                        </div>
+                    </div> 
+                      <div class="col-12 col-md-6 mb-2">
+                        <div class="form-floating form-group">
+                            <select class="form-select" id="location" name="location">
+                                <option value="18 Muller">18 Muller Rd (NJ/WH1)</option>
+                                <option value="5 Thornton">5 Thornton Ave (NJ/WH2)</option>
+                                
+                            </select>
+                            <label for="location">Location</label>
+                        </div>
+                </div>
+         
+                    
+                </div>
+                       <div class="row mb-2">
+                    <div class="col">
+                        <div class="form-floating form-group">
+                        <textarea id="po_items" name="po_items" class="form-control" placeholder="Items" rows="5" required></textarea>
+                            <label for="po_items">Items/SKUS</label>
+                        </div>
+                    </div>
+                    </div>
+                            <div class="row mb-2">
+                    <div class="col-12 col-md-6 mb-2">
+                        <div class="form-floating form-group">
+                     <input type="text" class="form-control highlight" id="reference" name="reference" placeholder="Reference">
+                            <label for="reference">Reference</label>
+                        </div>
+                </div>
+                  <div class="col-12 col-md-6 mb-2">
+                        <div class="form-floating form-group">
+                     <input type="text" class="form-control highlight" id="description" name="description" placeholder="Description">
+                            <label for="description">Description</label>
+                        </div>
+                </div>
+                    
+                </div>
+           
+         
+                        <div class="row">
+                    <div class="col">
+                        <div class="form-floating form-group">
+                        <textarea id="notes" name="notes" class="form-control highlight" placeholder="Notes/Comments" rows="5"></textarea>
+                            <label for="notes">Notes/Comments</label>
+                        </div>
+                    </div>
+                    </div>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Send database request to get the po data when po_no on the form-create is entered
+$("#form-create").on('change', 'input[name="po_no"]', function() {
+    var po_no = $(this).val();
+    console.log(po_no);
+    $.ajax({
+        url: '/wms/nj/delivery/get-po',
+        type: 'POST',
+        data: {po_no: po_no},
+        dataType: 'json',
+        success: function(result) {
+            if(result.status) {
+                $("#form-create input[name='verbal_po']").val(result.data.verbal_po);
+                $("#form-create input[name='branch_code']").val(result.data.branch_code);
+                  $("#form-create input[name='reference']").val(result.data.reference);
+                  $("#form-create input[name='description']").val(result.data.description);
+                   $("#form-create input[name='supplier_id']").val(result.data.supplier_id);
+                $("#form-create input[name='supplier_code']").val(result.data.supplier_code);
+                // grab the items from the api response and and display the sku in the po_items textarea field. Separate by a comma, except for the last item
+                var items = result.data.items;
+                var po_items = "";
+                for(var i = 0; i < items.length; i++) {
+                    po_items += items[i].sku;
+                    if(i < items.length - 1) {
+                        po_items += ", ";
+                    }
+                }
+                $("#form-create textarea[name='po_items']").val(po_items);
+               
+            } else {
+                $(".modal-message").html(result.message);
+            }
+        }
+    });
+});
+
+
+// Create a new record when form is submitted via AJAX
+
+$("#modal-create").on("submit", "#form-create", function(e) {
+     e.preventDefault();
+     // get the value of user's which is store as a string from local storage
+    var user = localStorage.getItem("user");
+    // add the value of user's name to the form data to be sent to the server
+    $(this).append('<input type="hidden" name="user" value="' + user + '">');
+
+    $.ajax({
+        url: '/wms/nj/delivery/create',
+        type: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        encode: true,
+        success: function(result) {
+            if(result.status) {
+                $("#modal-create").modal("hide");
+                 location.reload();
+            } else {
+                $(".modal-message").html(result.message);
+            }
+        }
+    });
+});
+
+</script>

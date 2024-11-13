@@ -1,0 +1,134 @@
+<div class="modal fade" id="modal-create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="createModalLabel">Add PO Item</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-create" method="post" autocomplete="off">
+                <div class="row mb-2">
+                    <div class="col-12 col-md-6 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="sku" name="sku" placeholder="SKU">
+                            <label for="sku">SKU</label>
+                        </div>
+                    </div>
+                          <div class="col-12 col-md-6">
+                        <div class="form-floating form-group">
+                     <input type="text" class="form-control highlight" id="description" name="description" placeholder="Description">
+                            <label for="description">Description</label>
+                        </div>
+                </div>
+          
+                </div>
+
+                <div class="row mb-2">
+                     <div class="col-12 col-md-6 col-lg-3 mb-2">
+                    <div class="form-floating form-group">
+                            <input type="number" class="form-control" id="qty_order" name="qty_order" placeholder="Order Qty">
+                            <label for="qty_order">Order Qty</label>
+                        </div> 
+                        
+                    </div>
+                       <div class="col-12 col-md-6 col-lg-3 mb-2">
+                    <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="order_uom" name="order_uom" placeholder="Order UOM" value="LF">
+                            <label for="order_uom">Order UOM</label>
+                        </div> 
+                        
+                    </div>
+                               <div class="col-12 col-md-6 col-lg-3 mb-2">
+                    <div class="form-floating form-group">
+                            <input type="number" class="form-control" id="stock_qty" name="stock_qty" placeholder="Stock Qty" value="LF">
+                            <label for="stock_qty">Stock Qty</label>
+                        </div> 
+                        
+                    </div>
+                            <div class="col-12 col-md-6 col-lg-3 mb-2">
+                    <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="stock_uom" name="stock_uom" placeholder="Stock UOM" value="LF">
+                            <label for="stock_uom">Stock UOM</label>
+                        </div> 
+                        
+                    </div>
+               
+                    
+                    
+                    
+              
+                 
+                    </div>
+                         <div class="row mb-2">
+                     <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="length" name="length" placeholder="Length" value="NA">
+                            <label for="length">Length</label>
+                        </div>
+                    </div>
+                  
+               
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="number" class="form-control" id="units" name="units" placeholder="Total Units" value="1">
+                            <label for="units">No. of Units</label>
+                        </div>
+                    </div>
+                      <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <div class="form-floating form-group">
+                            <input type="number" class="form-control" id="qty_unit" name="qty_unit" placeholder="Qty/Unit" value="1">
+                            <label for="qty_unit">Qty/Unit</label>
+                        </div>
+                    </div>
+                  
+                 
+                    </div>
+                
+
+            <div class="modal-footer">
+                <button type="submit" name="submit" class="btn btn-success">Submit</button>
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+// On submit of the create modal grab the values and append a new row to the bottom of the table with the values from the form
+ $("#modal-create").on("submit", "#form-create", function(e) {
+        e.preventDefault();
+        var status = 'OPEN';
+        var total_units = $("#modal-create input[name='units']").val();
+        var unit_qty = $("#modal-create input[name='qty_unit']").val();
+        var unit_uom = $("#modal-create input[name='stock_uom']").val();
+        var order_qty = $("#modal-create input[name='qty_order']").val();
+        var order_uom = $("#modal-create input[name='order_uom']").val();
+        var stock_qty = $("#modal-create input[name='stock_qty']").val();
+        var stock_uom = $("#modal-create input[name='stock_uom']").val();
+        var length = $("#modal-create input[name='length']").val();
+        var sku = $("#modal-create input[name='sku']").val();
+        var description = $("#modal-create input[name='description']").val();
+        var po_no = $("#modal-poItems h1.modal-title").data('po');
+        var supplier_code = $("#modal-poItems h1.modal-title").data('supplier_code');
+        var supplier_id = $("#modal-poItems h1.modal-title").data('supplier_id');
+        var html = `<tr data-id="">
+                        <td mb-2>
+                        <a class="btn-delete delete-icon" href="#" data-sku="${sku}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/> <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></svg></a></td>
+                        <td><span class="${status.toLowerCase()}">${status}</span></td>
+                         <td class="varchar"><input type="number" class="form-control" id="total_units" name="total_units" value="${total_units}" required></td>                    <td class="input-group">
+                            <input type="number" class="form-control text" data-unit_uom="${unit_uom}" id="unit_qty" name="unit_qty" value="${unit_qty}" required>
+                            <span class="input-group-text">${unit_uom}</span>                     </td>
+                        <td class="varchar">${total_units}</td>
+                            <td class="varchar" data-order_uom="${order_uom}" data-order_qty="${order_qty}">${order_qty} ${order_uom}</td>
+                            <td class="varchar">${stock_qty} ${stock_uom}</td>
+                        <td class="mediumtext">${sku}</td>
+                        <td class="longtext">${description}</td>
+                        <td class="varchar">${length}</td>
+                       </tr>`;
+          $("#modal-create").modal('hide');
+        $("#modal-poItems tbody").append(html);
+      
+    });
+    
+</script>

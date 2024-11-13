@@ -1,0 +1,175 @@
+<div class="modal fade" id="scanModal" tabindex="-1" role="dialog" aria-labelledby="scanModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scanModalLabel">Scan Barcode</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <video id="video" width="100%" height="100%"></video>
+                <p id="scan-result"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('video');
+        const scanResult = document.getElementById('scan-result');
+        const manualEntry = document.getElementById('manual_entry');
+        const unitId = document.getElementById('unit_id');
+        const itemDetails = document.getElementById('item-details');
+
+        function fetchItemDetails(barcode) {
+            $.ajax({
+                url: '/path/to/your/api',
+                method: 'POST',
+                data: { barcode: barcode },
+                success: function(response) {
+                    // Assuming response contains stock_id, sku, supplier_id, supplier_code, description
+                    itemDetails.innerHTML = `
+                        <div class="col-12 col-md-6 col-lg-3 mb-2">
+                            <div class="form-floating form-group">
+                                <input type="text" class="form-control" id="stock_id" name="stock_id" value="${response.stock_id}" readonly>
+                                <label for="stock_id">Stock ID</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-2">
+                            <div class="form-floating form-group">
+                                <input type="text" class="form-control" id="sku" name="sku" value="${response.sku}" readonly>
+                                <label for="sku">SKU</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-2">
+                            <div class="form-floating form-group">
+                                <input type="text" class="form-control" id="supplier_id" name="supplier_id" value="${response.supplier_id}" readonly>
+                                <label for="supplier_id">Supplier ID</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-2">
+                            <div class="form-floating form-group">
+                                <input type="text" class="form-control" id="supplier_code" name="supplier_code" value="${response.supplier_code}" readonly>
+                                <label for="supplier_code">Supplier Code</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-2">
+                            <div class="form-floating form-group">
+                                <input type="text" class="form-control" id="description" name="description" value="${response.description}" readonly>
+                                <label for="description">Description</label>
+                            </div>
+                        </div>
+                    `;
+                },
+                error: function(xhr, status, error) {
+                    alert('Error fetching item details: ' + error);
+                }
+            });
+        }
+
+        if ('BarcodeDetector' in window) {
+            const barcodeDetector = new BarcodeDetector({ formats: ['code_128'] });
+
+            document.querySelector('[data-bs-target="#scanModal"]').addEventListener('click', () => {
+                navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+                    .then(stream => {
+                        video.srcObject = stream;
+                        video.play();
+                    })
+                    .catch(err => console.error(err));
+            });
+
+            video.addEventListener('play', () => {
+                const scanBarcode = () => {
+                    barcodeDetector.detect(video)
+                        .then(barcodes => {
+                            if (barcodes.length > 0) {
+                                const code = barcodes[0].rawValue;
+                                scanResult.textContent = code;
+                                manualEntry.value = code;
+                                unitId.value = code;
+                                fetchItemDetails(code);
+                                $('#scanModal').modal('hide');
+                                video.srcObject.getTracks().forEach(track => track.stop());
+                            } else {
+                                requestAnimationFrame(scanBarcode);
+                            }
+                        })
+                        .catch(err => console.error(err));
+                };
+                scanBarcode();
+            });
+
+            $('#scanModal').on('hidden.bs.modal', () => {
+                video.srcObject.getTracks().forEach(track => track.stop());
+            });
+        } else {
+            alert('Barcode Detection API is not supported in this browser. Falling back to QuaggaJS.');
+
+            document.querySelector('[data-bs-target="#scanModal"]').addEventListener('click', () => {
+                navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+                    .then(stream => {
+                        video.srcObject = stream;
+                        video.play();
+                        Quagga.init({
+                            inputStream: {
+                                name: "Live",
+                                type: "LiveStream",
+                                target: video
+                            },
+                            decoder: {
+                                readers: ["code_128_reader"]
+                            }
+                        }, function(err) {
+                            if (err) {
+                                console.log(err);
+                                return;
+                            }
+                            console.log("Initialization finished. Ready to start");
+                            Quagga.start();
+                        });
+
+                        Quagga.onDetected(function(data) {
+                            const code = data.codeResult.code;
+                            scanResult.textContent = code;
+                            manualEntry.value = code;
+                            unitId.value = code;
+                            fetchItemDetails(code);
+                            $('#scanModal').modal('hide');
+                            Quagga.stop();
+                            video.srcObject.getTracks().forEach(track => track.stop());
+                        });
+                    })
+                    .catch(err => console.error(err));
+            });
+
+            $('#scanModal').on('hidden.bs.modal', () => {
+                Quagga.stop();
+                video.srcObject.getTracks().forEach(track => track.stop());
+            });
+        }
+
+        $('#form-create').on('submit', function(event) {
+            event.preventDefault();
+            const numUnits = document.getElementById('num_units').value;
+            const unitIdValue = unitId.value;
+
+            $.ajax({
+                url: '/path/to/your/update/api',
+                method: 'POST',
+                data: { unit_id: unitIdValue, num_units: numUnits },
+                success: function(response) {
+                    alert('Quantity updated successfully');
+                    // Optionally, you can reset the form or update the UI
+                },
+                error: function(xhr, status, error) {
+                    alert('Error updating quantity: ' + error);
+                }
+            });
+        });
+    });
+</script>

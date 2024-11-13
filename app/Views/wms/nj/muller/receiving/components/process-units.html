@@ -1,0 +1,273 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+<div class="modal fade" id="modal-process-units" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-2" id="processUnitsModalLabel" data-po="" data-supplier="" data-status="">Receive Units</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+    <table id="table-process-units" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Unit ID</th>
+                <th>SKU</th>
+                <th>Qty/Unit</th>
+                <th>Length</th>
+                <th>Total</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" name="btn-save" id="btn-save">Save Pre-Receiving</button>
+                <button type="button" class="btn btn-secondary" name="btn-generate-labels" id="btn-generate-labels">Generate Labels</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+
+    $("#modal-process-units").on('click', 'a.btn-duplicate', function(e) {
+        e.preventDefault();
+        var po_no = $("#modal-process-units h1.modal-title").data('po');
+        var row = $(this).closest('tr');
+        var unit_id = row.find('span#unit_no').text();
+        var sku = row.find('input[name="sku"]').val();
+        var unit_qty = row.find('input[name="unit_qty"]').val();
+        var unit_uom = row.find('input[name="unit_qty"]').data('unit_uom');
+        var length = row.find('td:eq(4)').text();
+        var order_qty = row.find('input[name="order_qty"]').val();
+        var order_uom = row.find('input[name="order_qty"]').data('order_uom');
+        var notes = row.find('input[name="notes"]').val();
+        var last_row = $("#modal-process-units tbody tr").length;
+        var next_row = last_row + 1;
+
+        $("#modal-duplicate-unit").modal('show');
+
+        // Set new data attributes
+        $('#po_no').val(po_no);
+        $('#unit_id').val(unit_id);
+        $('#sku').val(sku);
+        $('#unit_qty').val(unit_qty);
+        $('#unit_uom').val(unit_uom);
+        $('#length').val(length);
+        $('#order_qty').val(order_qty);
+        $('#order_uom').val(order_uom);
+        $('#notes').val(notes);
+        $('#next_row').val(next_row);
+    });
+
+  
+// on click of the delete button, launch the delete-unit modal and set the id of the row to be deleted and remove the row from the table if yes is chosen
+$("#modal-process-units").on('click', 'a.btn-delete', function(e) {
+    e.preventDefault();
+    var id = $(this).data('id');
+    var row = $(this).closest('tr');
+    var unit_id = row.find('td:eq(1)').text();
+    $("#modal-delete-unit").modal('show');
+    $("#modal-delete-unit .delete").html(`Delete Unit# ${unit_id}?`);
+    $("#modal-delete-unit").find('button[name="btn-delete"]').data('id', id);
+
+    $("#modal-delete-unit button[name='btn-cancel']").on('click', function() {
+        $("#modal-delete-unit").modal("hide");
+    });
+    $("#modal-delete-unit button[name='btn-delete']").on('click', function() {
+         row.remove();
+           $("#modal-delete-unit").modal("hide");
+    });
+});
+
+// Recalculate the total_unit_qty when unit_qty changes
+$("#modal-process-units").on('change', 'input[name="unit_qty"]', function() {
+    console.log('Value changed!');
+        var row = $(this).closest('tr');
+        var unit_qty = row.find('input[name="unit_qty"]').val();
+        var order_uom = row.find('input[name="order_qty"]').data('order_uom');
+        var length_value = row.find('td:eq(4)').data('length_value');
+        console.log(length_value);
+        var order_qty;
+        console.log(unit_qty);
+
+        if (order_uom === "LF") {
+            order_qty = unit_qty * length_value;
+        } else {
+            order_qty = unit_qty;
+        }
+
+        row.find('input[name="order_qty"]').val(order_qty);
+    });
+    
+// On click of the submit button, grab all the values from the table rows and send them to the server via AJAX, get the sum of the total_unit_qty & damage and update the po_items table & change the status to RECEIVED for the po item
+
+$("#modal-process-units").on('click', 'button[name="btn-save"]', function() {
+      po_no = $("#modal-process-item h1.modal-title").data('po');
+      supplier_code = $("#modal-process-item h1.modal-title").data('supplier_code');
+      supplier_id =  $("#modal-process-item h1.modal-title").data('supplier_id');
+    var items = [];
+    $("#modal-process-units tbody tr").each(function() {
+        
+        var item = { 
+            unit_id:  $(this).find('span#unit_no').text(),
+            sku: $(this).find('input[name="sku"]').val(),
+            unit_qty: $(this).find('input[name="unit_qty"]').val(),
+            unit_uom: $(this).find('input[name="unit_qty"]').data('unit_uom'),
+            length: $(this).find('input[name="length"]').val(),
+            total_qty: $(this).find('input[name="total_qty"]').val(),
+            total_uom: $(this).find('input[name="total_qty"]').data('total_uom'),
+            notes: $(this).find('input[name="notes"]').val()
+        };
+        console.log(item);
+        items.push(item);
+       
+        $("#modal-process-units tbody tr").each(function() {
+            if($(this).attr('id') == id) {
+                total_received += parseInt($(this).find('input[name="total_unit_qty"]').val());
+                total_damage += parseInt($(this).find('input[name="damage"]').val());
+            }
+        });
+
+
+    });
+    $.ajax({
+        url: '/receive-items',
+        type: 'POST',
+        // add a single value for the id outside of the items array
+
+        data: {items: items},
+        dataType: 'json',
+        success: function(result) {
+            if(result.status) {
+                $("#modal-process-item").modal('hide');
+            } else {
+                $(".modal-message").html(result.message);
+            }
+        }
+    });
+});
+
+document.getElementById('btn-generate-labels').addEventListener('click', function() {
+    var tableData = gatherTableData();
+    const { jsPDF } = window.jspdf;
+    var doc = new jsPDF({
+        orientation: 'portrait',
+        unit: 'in',
+        format: [8.5, 11] // Letter size paper to fit two 4" x 6" labels
+    });
+
+    // Define styles
+    var labelWidth = 6;
+    var labelHeight = 4;
+    var margin = 1;
+    var lineHeight = 0.58;
+    var fontSize = 42;
+
+
+     tableData.forEach(function(data, index) {
+        var x = margin; // Center the label horizontally on the page
+        var y = margin + (index % 2) * (labelHeight + margin); // Position labels vertically
+
+        // Check if we need to add a new page
+        if (index > 0 && index % 2 === 0) {
+            doc.addPage();
+            y = margin;
+        }
+        // Set background color
+
+        
+      
+       // Add SKU text
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(fontSize);
+        doc.text(`${data.sku}`, x + 0.2, y + lineHeight);
+        doc.text(`${data.unitId}`, x + 0.2, y + 2 * lineHeight);
+
+        doc.text(`(${data.qtyPerUnit} / ${data.unitLength})`, x + 0.2, y + 3 * lineHeight);
+        
+        
+
+    });
+
+    doc.save('labels.pdf');
+});
+
+function gatherTableData() {
+    var tableData = [];
+    $('#table-process-units tbody tr').each(function() {
+        var row = $(this);
+        var unitData = {
+                    unitId: row.find('span#unit_no').text(),
+                    sku: sku = row.find('input[name="sku"]').val(),
+                    qtyPerUnit: row.find('input[name="unit_qty"]').val(),
+                    unitUom: row.find('input[name="unit_qty"]').data('unit_uom'),
+                    unitLength: row.find('td:eq(4)').text(),
+                    totalQty: row.find('input[name="order_qty"]').val(),
+                    totalUom:row.find('input[name="order_qty"]').data('order_uom'),
+                    supplier: $('#processUnitsModalLabel').data('supplier'),
+                    po: $('#processUnitsModalLabel').data('po')
+        };
+        tableData.push(unitData);
+    });
+    return tableData;
+}
+
+
+
+function gatherRowData(row) {
+    return {
+        unitId: row.find('span#unit_no').text(),
+        sku: row.find('input[name="sku"]').val(),
+        qtyPerUnit: row.find('input[name="unit_qty"]').val(),
+        unitUom: row.find('input[name="unit_qty"]').data('unit_uom'),
+        unitLength: row.find('td:eq(4)').text(),
+        totalQty: row.find('input[name="order_qty"]').val(),
+        totalUom: row.find('input[name="order_qty"]').data('order_uom'),
+        supplier: $('#processUnitsModalLabel').data('supplier'),
+        po: $('#processUnitsModalLabel').data('po')
+    };
+}
+
+function printLabel(data) {
+    const { jsPDF } = window.jspdf;
+    var doc = new jsPDF({
+        orientation: 'portrait',
+        unit: 'in',
+        format: [8.5, 11] // 4" x 6" label size
+    });
+
+    // Define styles
+    var labelWidth = 4;
+    var labelHeight = 6;
+    var margin = 0.5;
+    var lineHeight = 0.58;
+    var fontSize = 42;
+
+    // Set the starting position for the text
+    var x = margin;
+    var y = margin;
+
+    // Add SKU text
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(fontSize);
+    doc.text(`${data.sku}`, x, y + lineHeight);
+    doc.text(`${data.unitId}`, x, y + 2 * lineHeight);
+    doc.text(`(${data.qtyPerUnit} / ${data.unitLength})`, x, y + 3 * lineHeight);
+
+    doc.save('label.pdf');
+}
+
+
+$(document).on('click', 'a.btn-print-label', function(e) {
+    e.preventDefault();
+    var row = $(this).closest('tr');
+    var rowData = gatherRowData(row);
+    printLabel(rowData);
+});
+
+</script>

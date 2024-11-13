@@ -1,0 +1,300 @@
+ERROR - 2024-09-16 15:20:01 --> mysqli_sql_exception: Unknown column 'total' in 'field list' in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj...', NULL, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+#5 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch(Array)
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 15:20:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'total' in 'field list'
+[Method: POST, Route: wms/nj/receiving/receive-items]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', null, false)
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+ 3 APPPATH/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch([...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 15:20:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'total' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', null, false)
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 15:20:01 --> [Caused by] mysqli_sql_exception: Unknown column 'total' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', null, false)
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+ 6 APPPATH/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-16 15:20:05 --> mysqli_sql_exception: Unknown column 'total' in 'field list' in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj...', NULL, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+#5 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch(Array)
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-16 15:20:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'total' in 'field list'
+[Method: POST, Route: wms/nj/receiving/receive-items]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', null, false)
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+ 3 APPPATH/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch([...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 15:20:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'total' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', null, false)
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-16 15:20:05 --> [Caused by] mysqli_sql_exception: Unknown column 'total' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_inventory` (`damage`, `length`, `po_no`, `sku`, `supplier_code`, `total`, `total_uom`, `unit_id`, `unit_qty`, `unit_uom`)
+VALUES (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-1\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-2\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-3\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'BB514NPRF-16\',\'CMPC\',\'5376\',\'LF\',\'7529-4\',\'336\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-5\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-6\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-7\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-8\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-9\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'N8753PRF-16\',\'CMPC\',\'12288\',\'LF\',\'7529-10\',\'768\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-11\',\'672\',\'PC\'), (\'0\',\'16\',\'7529\',\'WM53PRF-16\',\'CMPC\',\'10752\',\'LF\',\'7529-12\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-13\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-14\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-15\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-16\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-17\',\'672\',\'PC\'), (\'0\',\'7\',\'7529\',\'WM361PRF-7\',\'CMPC\',\'4704\',\'LF\',\'7529-18\',\'672\',\'PC\')
+ON DUPLICATE KEY UPDATE
+`nj_inventory`.`damage` = VALUES(`damage`),
+`nj_inventory`.`length` = VALUES(`length`),
+`nj_inventory`.`po_no` = VALUES(`po_no`),
+`nj_inventory`.`sku` = VALUES(`sku`),
+`nj_inventory`.`supplier_code` = VALUES(`supplier_code`),
+`nj_inventory`.`total` = VALUES(`total`),
+`nj_inventory`.`total_uom` = VALUES(`total_uom`),
+`nj_inventory`.`unit_id` = VALUES(`unit_id`),
+`nj_inventory`.`unit_qty` = VALUES(`unit_qty`),
+`nj_inventory`.`unit_uom` = VALUES(`unit_uom`)', null, false)
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1998): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch', 100)
+ 6 APPPATH/Controllers/WMS/NJ/Receiving.php(324): CodeIgniter\Database\BaseBuilder->upsertBatch([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveItems()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

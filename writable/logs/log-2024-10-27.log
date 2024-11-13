@@ -1,0 +1,58 @@
+CRITICAL - 2024-10-27 04:07:19 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-27 06:05:10 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-10-27 06:10:19 --> Expected NET_SFTP_HANDLE or NET_SFTP_STATUS. Got packet type: 
+CRITICAL - 2024-10-27 06:15:11 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-10-27 06:24:58 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-27 06:25:04 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-10-27 15:54:50 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/sc/delivery/items]
+in APPPATH/Controllers/WMS/SC/DeliveryItems.php on line 34.
+ 1 APPPATH/Controllers/WMS/SC/DeliveryItems.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/SC/DeliveryItems.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\SC\DeliveryItems->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\SC\DeliveryItems))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-27 17:16:40 --> ErrorException: include(components/create-sku.php): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/thornton/receiving]
+in APPPATH/Views/wms/nj/thornton/receiving/index.php on line 12.
+ 1 APPPATH/Views/wms/nj/thornton/receiving/index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(components/create-sku.php): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/thornton/receiving/index.php', 12)
+ 2 APPPATH/Views/wms/nj/thornton/receiving/index.php(12): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/thornton/receiving/index.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/thornton/receiving/index', [], true)
+ 6 APPPATH/Controllers/WMS/NJ/Thornton/Receiving.php(17): view('wms/nj/thornton/receiving/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Thornton\Receiving->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Thornton\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

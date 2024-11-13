@@ -1,0 +1,80 @@
+ERROR - 2024-09-24 14:07:22 --> mysqli_sql_exception: Unknown column 'po_description' in 'field list' in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj...', Array, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(86): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-09-24 14:07:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'po_description' in 'field list'
+[Method: POST, Route: wms/nj/receiving/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (:po_no:, :verbal_po:, :branch_code:, :supplier_code:, :reference:, :po_description:, :location:, :booked_by:, :scheduled:, :po_items:, :notes:)', [...], false)
+ 2 APPPATH/Controllers/WMS/NJ/Receiving.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-24 14:07:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'po_description' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (\'7531\', \'GS59720\', \'10NJ\', \'CMPC\', \'\', NULL, \'18 Muller\', \'Sunny Joseph\', \'2024-09-30\', \'CGM31PRF-16, UC51PRF-16, WM327PRF-16, C8712PRF-16, WM351PRF-7\', \'\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (\'7531\', \'GS59720\', \'10NJ\', \'CMPC\', \'\', NULL, \'18 Muller\', \'Sunny Joseph\', \'2024-09-30\', \'CGM31PRF-16, UC51PRF-16, WM327PRF-16, C8712PRF-16, WM351PRF-7\', \'\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (:po_no:, :verbal_po:, :branch_code:, :supplier_code:, :reference:, :po_description:, :location:, :booked_by:, :scheduled:, :po_items:, :notes:)', [...], false)
+ 4 APPPATH/Controllers/WMS/NJ/Receiving.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-24 14:07:22 --> [Caused by] mysqli_sql_exception: Unknown column 'po_description' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (\'7531\', \'GS59720\', \'10NJ\', \'CMPC\', \'\', NULL, \'18 Muller\', \'Sunny Joseph\', \'2024-09-30\', \'CGM31PRF-16, UC51PRF-16, WM327PRF-16, C8712PRF-16, WM351PRF-7\', \'\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (\'7531\', \'GS59720\', \'10NJ\', \'CMPC\', \'\', NULL, \'18 Muller\', \'Sunny Joseph\', \'2024-09-30\', \'CGM31PRF-16, UC51PRF-16, WM327PRF-16, C8712PRF-16, WM351PRF-7\', \'\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (\'7531\', \'GS59720\', \'10NJ\', \'CMPC\', \'\', NULL, \'18 Muller\', \'Sunny Joseph\', \'2024-09-30\', \'CGM31PRF-16, UC51PRF-16, WM327PRF-16, C8712PRF-16, WM351PRF-7\', \'\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`po_no`, `verbal_po`, `branch_code`, `supplier_code`, `reference`, `po_description`, `location`, `booked_by`, `scheduled`, `po_items`, `notes`) VALUES (:po_no:, :verbal_po:, :branch_code:, :supplier_code:, :reference:, :po_description:, :location:, :booked_by:, :scheduled:, :po_items:, :notes:)', [...], false)
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-24 14:35:24 --> ErrorException: Undefined variable $data
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 196.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 196)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-24 14:38:08 --> ErrorException: Undefined variable $data
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 196.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 196)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-24 14:41:01 --> ErrorException: Undefined variable $data
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 196.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 196)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

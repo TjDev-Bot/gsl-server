@@ -1,0 +1,81 @@
+<div class="modal fade" id="modal-duplicate-unit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="duplicateModalLabel">Duplicate Unit</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Duplicated Units will appear to the bottom of the list</p>
+                <form id="form-duplicate-unit" method="post" autocomplete="off">
+                    <input type="hidden" id="po_no" name="po_no">
+                    <input type="hidden" id="unit_id" name="unit_id">
+                    <input type="hidden" id="sku" name="sku">
+                    <input type="hidden" id="unit_qty" name="unit_qty">
+                    <input type="hidden" id="unit_uom" name="unit_uom">
+                    <input type="hidden" id="length" name="length">
+                    <input type="hidden" id="order_qty" name="order_qty">
+                    <input type="hidden" id="order_uom" name="order_uom">
+                    <input type="hidden" id="notes" name="notes">
+                    <input type="hidden" id="next_row" name="next_row">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <div class="form-floating form-group">
+                                <input type="number" class="form-control" id="number_units" name="number_units" placeholder="Number of Units">
+                                <label for="number-units">No. of Units</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" id="btn-duplicate" name="btn-duplicate">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .modal-body p {
+        color: white;
+    }
+</style>
+<script>
+    // On click of the duplicate button, get the input value and grab the data attributes of the row to be duplicated and set their values to the new row
+    $('#modal-duplicate-unit').on('submit', '#form-duplicate-unit', function(e) {
+        e.preventDefault();
+        var number_units = $('#number_units').val();
+        var po_no = $('#po_no').val();
+        var unit_id = $('#unit_id').val();
+        var sku = $('#sku').val();
+        var unit_qty = $('#unit_qty').val();
+        var unit_uom = $('#unit_uom').val();
+        var length = $('#length').val();
+        var order_qty = $('#order_qty').val();
+        var order_uom = $('#order_uom').val();
+        var notes = $('#notes').val();
+        var next_row = $('#next_row').val();
+
+        let original_row = $('#modal-process-units tbody tr').filter(function() {
+            return $(this).find('span#unit_no').text() == unit_id;
+        });
+
+        for (let i = 0; i < number_units; i++) {
+            let new_row = original_row.clone();
+            new_row.find('span#unit_no').text(`${po_no}-${next_row}`);
+            new_row.find('input[name="sku"]').val(sku);
+            new_row.find('input[name="unit_qty"]').val(unit_qty).data('unit_uom', unit_uom);
+            new_row.find('td:eq(4)').text(length);
+            new_row.find('input[name="order_qty"]').val(order_qty).data('order_uom', order_uom);
+            new_row.find('input[name="notes"]').val(notes);
+            $('#modal-process-units tbody').append(new_row);
+            next_row++;
+        }
+
+        $('#modal-duplicate-unit').modal('hide');
+        $('#form-duplicate-unit').trigger('reset');
+
+        // Smooth scroll to the bottom of the table
+        var modalBody = $('#modal-process-units .modal-body');
+        modalBody.animate({ scrollTop: modalBody[0].scrollHeight }, 'slow');
+    });
+</script>

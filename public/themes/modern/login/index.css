@@ -1,0 +1,58 @@
+body {
+    background-image: url('/themes/modern/login/login-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Create a cool css animation with the logo that opens like a door when you click the microsoft login button */
+.login-logo {
+    max-width: 300px;
+    min-width: 200px;
+    width: 15vw;
+    height: auto;
+  
+}
+.icon-btn {
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
+.login-box {
+    margin-top: -30%;
+    padding: 10px 20px;
+}
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-link {
+    color: #20342B;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 40%;
+    margin: auto;
+    font-weight: 700;
+    background-color: #CFB53B;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.wrap-row {
+    flex-wrap: wrap;
+    flex-direction: row;
+}

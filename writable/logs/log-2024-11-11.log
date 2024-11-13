@@ -1,0 +1,135 @@
+CRITICAL - 2024-11-11 06:00:32 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 06:58:25 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 07:12:24 --> ErrorException: Undefined variable $branch
+[Method: GET, Route: wms/nj/delivery/delivery-dates]
+in APPPATH/Controllers/WMS/Delivery.php on line 51.
+ 1 APPPATH/Controllers/WMS/Delivery.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $branch', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/Delivery.php', 51)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\Delivery->deliveryDates('nj')
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\Delivery))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:12:08 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:12:37 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:12:41 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:12:46 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:12:51 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:12:55 --> ErrorException: Undefined array key "id_token"
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 44.
+ 1 APPPATH/Controllers/Users/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_token"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 44)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:13:50 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:14:05 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:14:10 --> ErrorException: Attempt to read property "uuid" on null
+[Method: GET, Route: mslogin]
+in APPPATH/Controllers/Users/Login.php on line 52.
+ 1 APPPATH/Controllers/Users/Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "uuid" on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/Users/Login.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 08:17:13 --> ErrorException: Undefined array key "code"
+[Method: GET, Route: mslogin]
+in APPPATH/Libraries/MicrosoftAuth.php on line 69.
+ 1 APPPATH/Libraries/MicrosoftAuth.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "code"', '/home/sites/38a/c/cec089f1ff/public_html/app/Libraries/MicrosoftAuth.php', 69)
+ 2 APPPATH/Controllers/Users/Login.php(41): App\Libraries\MicrosoftAuth->token()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users\Login->mslogin()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-11 16:30:13 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

@@ -1,0 +1,92 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="offcanvasRightLabel">Calendar</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css' rel='stylesheet' />
+ <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+
+ <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    themeSystem: 'bootstrap5',
+    headerToolbar: {
+
+center: 'title',
+start: 'today prev,next',
+right: 'dayGridMonth,listWeek'
+},
+    events: '/wms/nj/delivery/delivery-dates',
+    height: 750,
+    weekMode: 'liquid',
+    allDaySlot: false,
+    eventClick: function(info) {
+      info.jsEvent.preventDefault();
+      // launch a bootstrap modal with the event data
+     // grab only the po_no from the event title from the format before the dash: 7529 - CMPC
+      var po_no = info.event.title.split(' - ')[0];
+        $.ajax({
+            url: '/wms/nj/delivery/items',
+            type: 'POST',
+            data: {po_no: po_no},
+            dataType: 'json',
+            success: function(results) {
+                if(results.status) {
+                    $("#modal-poItems").modal('show');
+// loop through the item objects and create a table row for each item 
+                    var html = '';
+                        for(var i = 0; i < results.data.items.length; i++) {
+                        html += `<tr data-id="${results.data.items[i].stock_id}">
+                        <td><span class="${results.data.items[i].status.toLowerCase()}">${results.data.items[i].status}</span></td>
+                        <td class="input-group">
+                            <input type="number" class="form-control text" data-unit_uom="${results.data.items[i].unit_uom}" id="unit_qty" name="unit_qty" value="${results.data.items[i].unit_qty}" disabled>
+                            <span class="input-group-text">${results.data.items[i].unit_uom}</span>
+                        </td>
+                        <td class="varchar">${results.data.items[i].total_units}</td>
+                         <td class="varchar" data-order_uom="${results.data.items[i].order_uom}">${results.data.items[i].order_qty} ${results.data.items[i].order_uom}</td>
+                         <td class="varchar">${results.data.items[i].stock_qty} ${results.data.items[i].stock_uom}</td>
+                        <td class="varchar">${results.data.items[i].sku}</td>
+                        <td class="longtext">${results.data.items[i].description}</td>
+                        <td class="varchar">${results.data.items[i].length}</td>
+                        
+                    </tr>`;
+                                    // set the status value of the select field to the value of the status field in the database for each item
+
+                }
+                $("#modal-poItems tbody").html(html);
+            
+                // set the value of the select field to the value of the status field in the database for each item
+                // Change the modal title to 'PO# - PO Number    Supplier - Supplier Code' an ad the PO Number and Supplier Code to the modal header.
+                $("#modal-poItems h1.modal-title").html(`NJ${results.data.po_no} (${results.data.supplier_code})`);
+               // Add the Supplier code and PO Number as data attributes to the modal title
+                $("#modal-poItems h1.modal-title").attr({
+                    'data-po': results.data.po_no,
+                    'data-supplier_code': results.data.supplier_code,
+                    'data-supplier_id': results.data.supplier_id
+                    
+                });
+                
+            } else {
+                $("#modal-poItems").modal('show');
+            }
+        }
+    });
+    // if the status of the PO is not open, populate the same modal from a request to the get-receiving-items method in the controller
+
+}
+
+  });
+  calendar.render();
+});
+
+
+
+</script>
+<div id='calendar'></div>
+
+</div>
+</div>

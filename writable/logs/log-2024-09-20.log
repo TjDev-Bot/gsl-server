@@ -1,0 +1,106 @@
+CRITICAL - 2024-09-20 04:57:45 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: wms/nj/receiving/receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 274.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 04:57:47 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: wms/nj/receiving/receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 274.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 04:58:06 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: wms/nj/receiving/receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 274.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 05:00:33 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: wms/nj/receiving/receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 274.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 274)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 05:10:54 --> TypeError: Cannot access offset of type array on array
+[Method: POST, Route: wms/nj/receiving/receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 274.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receivingItems()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 05:41:49 --> ErrorException: Trying to access array offset on null
+[Method: POST, Route: wms/nj/receiving/delete-poitem]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 240.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 240)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->deletePoItem()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 06:17:13 --> ErrorException: include(notifications/delete.html): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/receiving]
+in APPPATH/Views/wms/nj/receiving/index.php on line 103.
+ 1 APPPATH/Views/wms/nj/receiving/index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(notifications/delete.html): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/index.php', 103)
+ 2 APPPATH/Views/wms/nj/receiving/index.php(103): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/index.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/receiving/index', [], true)
+ 6 APPPATH/Controllers/WMS/NJ/Receiving.php(19): view('wms/nj/receiving/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 06:17:47 --> ErrorException: include(notifications/delete-po.html): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/receiving]
+in APPPATH/Views/wms/nj/receiving/components/edit.php on line 103.
+ 1 APPPATH/Views/wms/nj/receiving/components/edit.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(notifications/delete-po.html): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/components/edit.php', 103)
+ 2 APPPATH/Views/wms/nj/receiving/components/edit.php(103): include()
+ 3 APPPATH/Views/wms/nj/receiving/index.php(105): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/components/edit.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/index.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/receiving/index', [], true)
+ 7 APPPATH/Controllers/WMS/NJ/Receiving.php(19): view('wms/nj/receiving/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-20 06:18:09 --> ErrorException: include(notifications/delete-po.html): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/receiving]
+in APPPATH/Views/wms/nj/receiving/components/edit.php on line 103.
+ 1 APPPATH/Views/wms/nj/receiving/components/edit.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(notifications/delete-po.html): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/components/edit.php', 103)
+ 2 APPPATH/Views/wms/nj/receiving/components/edit.php(103): include()
+ 3 APPPATH/Views/wms/nj/receiving/index.php(105): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/components/edit.php')
+ 4 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/receiving/index.php')
+ 5 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/receiving/index', [], true)
+ 7 APPPATH/Controllers/WMS/NJ/Receiving.php(19): view('wms/nj/receiving/index', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

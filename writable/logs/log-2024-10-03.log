@@ -1,0 +1,378 @@
+CRITICAL - 2024-10-03 03:41:26 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/get-receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 299.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 299)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->getReceivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 03:41:50 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/get-receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 299.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 299)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->getReceivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 04:41:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "wms/nj/delivery/index.php"
+[Method: GET, Route: wms/nj/delivery]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('wms/nj/delivery/index.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/delivery/index', [], true)
+ 3 APPPATH/Controllers/WMS/NJ/Delivery.php(19): view('wms/nj/delivery/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:32:49 --> ErrorException: include(/../pre-receiving/index.php): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/delivery]
+in APPPATH/Views/wms/nj/delivery/index.php on line 135.
+ 1 APPPATH/Views/wms/nj/delivery/index.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/../pre-receiving/index.php): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/delivery/index.php', 135)
+ 2 APPPATH/Views/wms/nj/delivery/index.php(135): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/delivery/index.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/delivery/index', [], true)
+ 6 APPPATH/Controllers/WMS/NJ/Delivery.php(19): view('wms/nj/delivery/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:34:38 --> ErrorException: include(/../pre-receiving): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/delivery]
+in APPPATH/Views/wms/nj/delivery/index.php on line 135.
+ 1 APPPATH/Views/wms/nj/delivery/index.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/../pre-receiving): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/delivery/index.php', 135)
+ 2 APPPATH/Views/wms/nj/delivery/index.php(135): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/delivery/index.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/delivery/index', [], true)
+ 6 APPPATH/Controllers/WMS/NJ/Delivery.php(19): view('wms/nj/delivery/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:42:37 --> ErrorException: include(/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/pre-receiving): Failed to open stream: No such file or directory
+[Method: GET, Route: wms/nj/delivery]
+in APPPATH/Views/wms/nj/delivery/index.php on line 135.
+ 1 APPPATH/Views/wms/nj/delivery/index.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/pre-receiving): Failed to open stream: No such file or directory', '/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/delivery/index.php', 135)
+ 2 APPPATH/Views/wms/nj/delivery/index.php(135): include()
+ 3 SYSTEMPATH/View/View.php(234): include('/home/sites/38a/c/cec089f1ff/public_html/app/Views/wms/nj/delivery/index.php')
+ 4 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('wms/nj/delivery/index', [], true)
+ 6 APPPATH/Controllers/WMS/NJ/Delivery.php(19): view('wms/nj/delivery/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Delivery->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Delivery))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:50:25 --> ParseError: syntax error, unexpected token ","
+[Method: POST, Route: wms/nj/pre-receiving/get-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 30.
+ 1 VENDORPATH/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home/sites/38a/c/cec089f1ff/public_html/vendor/composer/../../app/Controllers/WMS/NJ/PreReceiving.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\WMS\\NJ\\PreReceiving')
+ 3 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\WMS\\NJ\\PreReceiving', true)
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:51:25 --> ParseError: Unclosed '[' on line 65 does not match ')'
+[Method: POST, Route: wms/nj/pre-receiving/get-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 67.
+ 1 VENDORPATH/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home/sites/38a/c/cec089f1ff/public_html/vendor/composer/../../app/Controllers/WMS/NJ/PreReceiving.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\WMS\\NJ\\PreReceiving')
+ 3 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\WMS\\NJ\\PreReceiving', true)
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:54:33 --> ParseError: Unclosed '[' on line 65 does not match ')'
+[Method: POST, Route: wms/nj/pre-receiving/get-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 67.
+ 1 VENDORPATH/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home/sites/38a/c/cec089f1ff/public_html/vendor/composer/../../app/Controllers/WMS/NJ/PreReceiving.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\WMS\\NJ\\PreReceiving')
+ 3 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\WMS\\NJ\\PreReceiving', true)
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 05:58:05 --> ParseError: Unclosed '[' on line 104 does not match ')'
+[Method: POST, Route: wms/nj/pre-receiving/get-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 106.
+ 1 VENDORPATH/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home/sites/38a/c/cec089f1ff/public_html/vendor/composer/../../app/Controllers/WMS/NJ/PreReceiving.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\WMS\\NJ\\PreReceiving')
+ 3 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\WMS\\NJ\\PreReceiving', true)
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-03 07:00:14 --> 22 : The requested URL returned error: 503
+CRITICAL - 2024-10-03 07:30:09 --> Error: Undefined constant "routes"
+[Method: GET, Route: wms/nj/delivery]
+in APPPATH/Config/Routes.php on line 73.
+ 1 SYSTEMPATH/Router/RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 2 APPPATH/Config/Routes.php(46): CodeIgniter\Router\RouteCollection->group('nj', Object(Closure))
+ 3 SYSTEMPATH/Router/RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 4 APPPATH/Config/Routes.php(43): CodeIgniter\Router\RouteCollection->group('wms', Object(Closure))
+ 5 SYSTEMPATH/Router/RouteCollection.php(340): require('/home/sites/38a/c/cec089f1ff/public_html/app/Config/Routes.php')
+ 6 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 07:30:10 --> Error: Undefined constant "routes"
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Config/Routes.php on line 73.
+ 1 SYSTEMPATH/Router/RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 2 APPPATH/Config/Routes.php(46): CodeIgniter\Router\RouteCollection->group('nj', Object(Closure))
+ 3 SYSTEMPATH/Router/RouteCollection.php(800): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 4 APPPATH/Config/Routes.php(43): CodeIgniter\Router\RouteCollection->group('wms', Object(Closure))
+ 5 SYSTEMPATH/Router/RouteCollection.php(340): require('/home/sites/38a/c/cec089f1ff/public_html/app/Config/Routes.php')
+ 6 SYSTEMPATH/CLI/Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2024-10-03 13:25:48 --> phpseclib3\Exception\FileNotFoundException: /home/sites/38a/c/cec089f1ff/public_html/writable/uploads/CronJobs/ThirdParty/Enable/Transfer/TURNOVER-20241003-20241003132544.zip is not a valid file
+[Method: GET, Route: enable/turnover]
+in VENDORPATH/phpseclib/phpseclib/phpseclib/Net/SFTP.php on line 2189.
+ 1 APPPATH/Controllers/CronJobs/Enable.php(91): phpseclib3\Net\SFTP->put('/Imports/TURNOVER-20241003-20241003132544.zip', '/home/sites/38a/c/cec089f1ff/public_html/writable/uploads/CronJobs/ThirdParty/Enable/Transfer/TURNOVER-20241003-20241003132544.zip', 1)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CronJobs\Enable->transferFile()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CronJobs\Enable))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:14:02 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:58:14 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:58:16 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:58:20 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:58:26 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:58:40 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:58:48 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:59:05 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:59:06 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:59:18 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 17:59:20 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:05:25 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:05:28 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:05:30 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:05:46 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:05:57 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:10:20 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:11:16 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:11:36 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:11:41 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:11:45 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-03 18:11:48 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/pre-receiving/edit-items]
+in APPPATH/Controllers/WMS/NJ/PreReceiving.php on line 103.
+ 1 APPPATH/Controllers/WMS/NJ/PreReceiving.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/PreReceiving.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\PreReceiving->editItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\PreReceiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

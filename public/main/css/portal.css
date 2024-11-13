@@ -1,0 +1,479 @@
+/* body */
+body {
+    margin: 0;
+    display: flex;
+    background-color: #212529 !important;
+}
+
+p {
+color: white;
+}	
+
+/* sidebar */
+img.panel-logo {
+width: 130px;
+height: auto !important;
+padding-top: 10px;
+} 
+
+#sidebar-container {
+width: 150px;
+position: fixed;
+height: 100vh;
+left: 0;
+overflow-x: hidden;
+overflow-y: auto;
+background: #0f0c0c;
+color: #fff;
+opacity: 1;
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#sidebar-container.sidebar-closed {
+opacity: 0;
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+z-index: 10;
+}
+
+#sidebar-logo {
+padding: 10px 20px;
+}
+
+#sidebar-navigation {
+padding: 0;
+margin: 0;
+list-style-type: none;
+position: relative;
+}
+
+#sidebar-navigation li {
+background-color: transparent;
+position: relative;
+line-height: 1.5em;
+margin: 5px 0;
+}
+#sidebar-navigation li a {
+padding: 10px 0;
+display: block;
+color: #fff;
+font-size: 17px;
+font-family: 'Arial', sans-serif;
+text-decoration: none;
+}
+i {
+width: 100%;
+}
+
+#sidebar-navigation li svg{
+display: block;
+width: 100%;
+height: 35px;
+text-align: center !important;
+}
+
+#sidebar-navigation li a:active,
+#sidebar-navigation li a:hover,
+#sidebar-navigation li a:focus {
+text-decoration: none;
+outline: none;
+}
+
+#sidebar-navigation li::before {
+position: absolute;
+width: 100%;
+left: 0;
+top: 0;
+font-size: 45px !important;
+z-index: -1;
+}
+
+#sidebar-navigation li:hover::before {
+width: 100%;
+}
+#sidebar-navigation .header {
+font-size: 12px;
+text-transform: uppercase;
+background-color: #151515;
+padding: 10px 15px 10px 30px;
+}
+.menu-item.login-but    {
+background: #2abbeb;
+}
+
+#sidebar-navigation .header::before {
+background-color: transparent;
+}
+
+ul {
+padding-top: 20px;
+padding-left: 0 !important;
+}
+#sidebar-navigation li a {
+text-align: center !important;
+color: white !important;
+width: 150px !important;
+}
+#sidebar-navigation li{
+text-align: center !important;
+}
+
+
+/* Primary Area */
+#primary {
+float: right;
+width: 100%;
+height: 100vh;
+margin-left: 150px;
+ -webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+background-color: #212529 !important;
+color: white;
+}
+#primary.sidebar-closed {
+width: 100%;
+margin-left: 0;
+ -webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+background-color: #212529 !important;
+color: white;
+}
+/* header */
+header {
+display: flex;
+background-color: #182B1F; 
+align-items: center;
+padding: 10px 20px;
+}
+header .bi-box-arrow-right, header a {
+color: #F2C243;
+text-decoration: none;
+}
+
+header h1 {
+color: white;
+font-size: 1.8em;
+font-family: 'Arial', sans-serif;
+margin: 0;
+}
+#nav-icon1 {
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0 auto;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 2000 !important;
+display: block;
+}
+
+#nav-icon1 span {
+display: block;
+position: absolute;
+height: 2px;
+width: 95%;
+background: white;
+border-radius: 2px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+top: 10px;
+}
+
+#nav-icon1 span:nth-child(3) {
+top: 20px;
+}
+
+#nav-icon1.sidebar-opened span:nth-child(1) {
+top: 18px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+#side-toggle {
+
+}
+.bi-list {
+color: white;
+width: 20px;
+height: 20px;
+}
+
+/* Tab Layouts */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+background-color: #22af46 !important;  
+border: none;
+}
+.nav-item {
+margin: 0 10px;
+}
+.btn-primary {
+background-color: orange;  
+color: black;
+padding: 0 10px;
+margin-left: 20px;
+font-size: 14px;
+
+}
+
+button.btn.btn-primary, button.btn.btn-primary:hover  {
+padding: 10px !important;
+background-color: orange;  
+color: black;
+}
+.nav-pills .nav-link {
+background-color: #2abbeb !important;
+border: none;
+color: black;
+font-weight: 700;
+}
+
+
+
+row.forms, row {
+display: block !important;
+}
+
+input {
+font-size: 20px;
+line-height: 1.5em;
+padding: 10px !important;
+}
+
+.card {
+color: white !important;
+background-color: black;
+}
+.nav-pills .nav-link, .nav-pills .nav-link.active {
+color:black;
+}
+.main {
+    padding: 10px 20px;
+    color: white;
+}
+ .modal-body {
+    background: black;
+    color: white;
+}
+ .modal-content {
+   background: black;
+   color: white;
+}
+    .modal-footer {
+    background: black;
+}
+.form-group {
+    padding: 5px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+padding: 0 16px;
+list-style: none;
+margin: 0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+display: inline;
+font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+padding: 8px;
+color: white;
+content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+color: #0275d8;
+text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+color: #01447e;
+text-decoration: underline;
+}
+h2 {
+ font-size: 28px;
+}
+p {
+  font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+
+/*body */
+
+/*sidebar 
+#sidebar-container {
+display: none;
+} */
+/*primary */ 
+header {
+grid-template-columns: 70px auto;
+padding: 10px;
+padding-top:20px;
+}
+#logout {
+display: none;
+}
+
+header h1 {
+color: white;
+font-size: 1.3em;
+}
+
+
+
+#primary {
+float: none;
+width: 100%;
+margin-left: 0 !important; 
+}
+#sidebar-container {
+width: 100%;
+position: fixed;
+height: 100vh;
+left: 0;
+overflow-x: hidden;
+overflow-y: auto;
+background: #0f0c0c;
+color: #fff;
+opacity: 0;
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+#sidebar-container.sidebar-closed {
+opacity: 1;
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+z-index: 10;
+}
+#sidebar-navigation li a {
+width: 100% !important;
+}
+img.panel-logo {
+width: 90px;  
+}
+#sidebar-navigation li svg{
+height: 20px;
+}
+#sidebar-navigation li a {
+font-size: 20px;
+}
+
+
+
+#nav-icon1 {
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0 auto;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 200 !important;
+display: block;
+}
+
+#nav-icon1 span {
+display: block;
+position: absolute;
+height: 2px;
+width: 100%;
+background: white;
+border-radius: 2px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+top: 10px;
+}
+
+#nav-icon1 span:nth-child(3) {
+top: 20px;
+}
+
+#nav-icon1.sidebar-closed span:nth-child(1) {
+top: 18px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+#nav-icon1.sidebar-closed span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+#nav-icon1.sidebar-closed span:nth-child(3) {
+top: 18px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+#nav-icon1.sidebar-closed {
+text-align: right;
+position: absolute;
+display: block;
+top: 5px;
+right: 10px;
+}
+
+}

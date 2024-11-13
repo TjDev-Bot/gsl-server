@@ -1,0 +1,528 @@
+CRITICAL - 2024-09-18 10:40:56 --> ErrorException: Undefined array key 5
+[Method: GET, Route: cron/openpo]
+in APPPATH/Controllers/CronJobs/OpenPO.php on line 63.
+ 1 APPPATH/Controllers/CronJobs/OpenPO.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/CronJobs/OpenPO.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CronJobs\OpenPO->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CronJobs\OpenPO))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 10:48:40 --> ErrorException: Undefined array key 5
+[Method: GET, Route: cron/openpo]
+in APPPATH/Controllers/CronJobs/OpenPO.php on line 63.
+ 1 APPPATH/Controllers/CronJobs/OpenPO.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/CronJobs/OpenPO.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CronJobs\OpenPO->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CronJobs\OpenPO))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 10:52:21 --> ErrorException: Undefined array key 5
+[Method: GET, Route: cron/openpo]
+in APPPATH/Controllers/CronJobs/OpenPO.php on line 63.
+ 1 APPPATH/Controllers/CronJobs/OpenPO.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/CronJobs/OpenPO.php', 63)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CronJobs\OpenPO->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CronJobs\OpenPO))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-18 12:36:28 --> mysqli_sql_exception: Column 'status' cannot be null in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj...', NULL, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+#5 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert(Array)
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-18 12:36:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: wms/nj/receiving/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 3 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 12:36:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 12:36:28 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 6 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-18 12:36:30 --> mysqli_sql_exception: Column 'status' cannot be null in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj...', NULL, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+#5 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert(Array)
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-18 12:36:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: wms/nj/receiving/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 3 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 12:36:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 12:36:30 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 6 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-18 12:36:41 --> mysqli_sql_exception: Column 'status' cannot be null in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj...', NULL, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+#5 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert(Array)
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-09-18 12:36:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+[Method: POST, Route: wms/nj/receiving/create]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 3 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 12:36:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-18 12:36:41 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nj_receiving` (`booked_by`, `branch_code`, `description`, `location`, `notes`, `po_items`, `po_no`, `reference`, `scheduled`, `status`, `supplier_code`, `verbal_po`)
+VALUES (\'RAUL CASTRO\',\'10NJ\',NULL,\'18 Muller\',\'\',\'MCOV5PRF-16, BB6PRF-16, 8753PRF-16, 8753PRF-7\',\'7536\',\'\',\'2024-09-26\',NULL,\'CMPC\',\'GS59723\')
+ON DUPLICATE KEY UPDATE
+`nj_receiving`.`booked_by` = VALUES(`booked_by`),
+`nj_receiving`.`branch_code` = VALUES(`branch_code`),
+`nj_receiving`.`description` = VALUES(`description`),
+`nj_receiving`.`location` = VALUES(`location`),
+`nj_receiving`.`notes` = VALUES(`notes`),
+`nj_receiving`.`po_items` = VALUES(`po_items`),
+`nj_receiving`.`po_no` = VALUES(`po_no`),
+`nj_receiving`.`reference` = VALUES(`reference`),
+`nj_receiving`.`scheduled` = VALUES(`scheduled`),
+`nj_receiving`.`status` = VALUES(`status`),
+`nj_receiving`.`supplier_code` = VALUES(`supplier_code`),
+`nj_receiving`.`verbal_po` = VALUES(`verbal_po`)', null, false)
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1964): CodeIgniter\Database\BaseBuilder->batchExecute('_upsertBatch')
+ 6 APPPATH/Controllers/WMS/NJ/Receiving.php(93): CodeIgniter\Database\BaseBuilder->upsert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->create()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

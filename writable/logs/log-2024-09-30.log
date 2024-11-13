@@ -1,0 +1,28 @@
+ERROR - 2024-09-30 05:30:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-09-30 05:30:23 --> 220 LO4P302CA0005.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 30 Sep 2024 09:30:17 +0000 [08DCE1182BEB5735]
+
+hello: 250-LO4P302CA0005.outlook.office365.com Hello [45.8.227.175]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-LO4P302CA0005.outlook.office365.com Hello [45.8.227.175]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 

@@ -1,0 +1,187 @@
+ERROR - 2024-10-01 03:56:39 --> mysqli_sql_exception: Unknown column 'scheduled' in 'field list' in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `po_no`,...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`,...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`,...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`,...', Array, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-10-01 03:56:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'scheduled' in 'field list'
+[Method: GET, Route: wms/nj/receiving/receive-dates]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', [], false)
+ 2 APPPATH/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:56:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'scheduled' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', [], false)
+ 4 APPPATH/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:56:39 --> [Caused by] mysqli_sql_exception: Unknown column 'scheduled' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', [], false)
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-01 03:57:51 --> mysqli_sql_exception: Unknown column 'scheduled' in 'field list' in /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `po_no`,...', 0)
+#1 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`,...')
+#2 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`,...')
+#3 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`,...', Array, false)
+#4 /home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+#6 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+#7 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/sites/38a/c/cec089f1ff/public_html/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/sites/38a/c/cec089f1ff/public_html/public/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-10-01 03:57:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'scheduled' in 'field list'
+[Method: GET, Route: wms/nj/receiving/receive-dates]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', [], false)
+ 2 APPPATH/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:57:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'scheduled' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', [], false)
+ 4 APPPATH/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:57:51 --> [Caused by] mysqli_sql_exception: Unknown column 'scheduled' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `po_no`, `supplier_code`, `scheduled`, `status`, `color`, `text_color`
+FROM `nj_receiving`', [], false)
+ 5 APPPATH/Controllers/WMS/NJ/Receiving.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receiveDates()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:59:38 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 194.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 194)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:59:39 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 194.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 194)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:59:40 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 194.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 194)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:59:41 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 194.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 194)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:59:41 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 194.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 194)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-01 03:59:46 --> ErrorException: Undefined variable $items
+[Method: POST, Route: wms/nj/receiving/process]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 194.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $items', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 194)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->process()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-10-01 06:30:21 --> 22 : The requested URL returned error: 503
+CRITICAL - 2024-10-01 08:08:54 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: wms/nj/receiving/receiving-items]
+in APPPATH/Controllers/WMS/NJ/Receiving.php on line 245.
+ 1 APPPATH/Controllers/WMS/NJ/Receiving.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/home/sites/38a/c/cec089f1ff/public_html/app/Controllers/WMS/NJ/Receiving.php', 245)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\WMS\NJ\Receiving->receivingItems()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WMS\NJ\Receiving))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(36): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

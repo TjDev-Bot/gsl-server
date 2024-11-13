@@ -1,0 +1,8 @@
+CRITICAL - 2024-11-02 18:20:05 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-02 18:30:05 --> ErrorException: Declaration of PhpOffice\PhpSpreadsheet\Reader\IReadFilter@anonymous::readCell($column, $row, $worksheetName = '') must be compatible with PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell(string $columnAddress, int $row, string $worksheetName = ''): bool
+[Method: CLI, Route: cronjob:run]
+in APPPATH/Controllers/CronJobs/PoStock.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
